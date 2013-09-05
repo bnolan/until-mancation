@@ -1,0 +1,23 @@
+
+<style>
+body{font-family: sans-serif; color: #333;text-align: center;}
+h1{letter-spacing: -2px; font-size: 4em}
+*{margin: 0; padding: 0}
+div{position: absolute; top: 35%; left: 0; right: 0}
+</style>
+
+<div>
+<h2>
+  The mancation is
+</h2>
+
+<h1>
+  <% if today? %>
+    Today! Fuck yeah!
+  <% elsif tomorrow? %>
+    Tomorrow!!!!!
+  <% else %>
+    <%= days_away %> days away
+  <% end %>
+</h1>
+</div>
